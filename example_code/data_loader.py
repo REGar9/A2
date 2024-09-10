@@ -740,6 +740,9 @@ class TIHMDataset(torch.utils.data.Dataset):
             values. This should be of the same structure
             as a Scikit-Learn imputer.
             Defaults to :code:`impute.SimpleImputer()`.
+            
+            -->Defaulted should be "mean"
+            -->according to the feature (column)
         
         - n_days: int, optional:
             The number of days to wrap into
@@ -749,11 +752,13 @@ class TIHMDataset(torch.utils.data.Dataset):
             returned data will be of shape
             (n_data_points, n_days, n_features).
             Defaults to :code:`1`.
+            --> set our n_days, e.g. 7
         
         - normalise: typing.Union[str, None], optional:
             Whether to normalise the data before 
             rolling it using n_days. This can
             be any of:
+            --> aim to normalize the balance between agitation / non-agitation labels
 
             - :code:`'global'`: Statistics are based \
             on all of the data. 
