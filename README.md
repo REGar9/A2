@@ -1,4 +1,4 @@
-# TIHM1.5-Data
+# TIHM1.5-Data Open “TIHM_Dataset/Code/LSTM.ipynb” and choose “run all cells”.
 
 ## Summary of Data Records
 
